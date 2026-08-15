@@ -1,0 +1,32 @@
+Data matrix: 625 x 49
+
+Singular values
+ i    raw A std    raw A enh     centered           dA
+ 1      49.8880      4.66040       6.0210       8.8130
+ 2       5.8681      0.26554       0.6242       1.2870
+ 3       0.5677      0.04073       0.3265       0.3266
+ 4       0.2935      0.02999       0.1899       0.1901
+ 5       0.1616      0.02399       0.1094       0.1522
+ 6       0.1026      0.02000       0.0930       0.0959
+
+Successive ratios s_i / s_(i+1)
+  pos    raw A std    raw A enh     centered           dA
+1->2          8.50        17.55         9.65         6.85
+2->3         10.34         6.52         1.91         3.94
+3->4          1.93         1.36         1.72         1.72
+4->5          1.82         1.25         1.74         1.25
+5->6          1.57         1.20         1.18         1.59
+
+Subspace projections (standard SVD on raw A)
+Cosines of angles between unit vectors, not singular values.
+ comp   proj on dA (2-D)   proj on A0
+V1                 0.437        0.991
+V2                 0.979        0.128
+V3                 0.901        0.031
+V4                 0.102        0.004
+
+Enhanced V1 projection onto A0: 0.870
+The derivative removes constant offsets but not a structured
+invariant background; centering or difference construction does.
+
+Mean spectrum maximum: A = 1.84 at 746.4 cm-1
